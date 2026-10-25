@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyrene Otadoy — creative developer based in the Philippines. Thoughtful digital experiences, built with intention.">
+  <meta name="theme-color" content="#FFF7FB">
+  <title>Cyrene Otadoy — Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></symbol>
+    <symbol id="i-design" viewBox="0 0 24 24"><path d="m15 3 6 6-11 11H4v-6ZM12 6l6 6M4 20l5-5"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7h.01M11 17v-7m0 3a3 3 0 0 1 6 0v4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></symbol>
+  </defs></svg>
+  <div class="ambient" aria-hidden="true"><div class="orb orb-pink"></div><div class="orb orb-rose"></div><div class="orb orb-bottom"></div></div>
+  <header class="topbar glass">
+    <a class="brand" href="#home" aria-label="Cyrene Otadoy, home">co<span>✳</span></a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="#contact">Let’s talk <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </header>
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> ASPIRING DATABASE ADMINISTRATOR <span class="eyebrow-separator">/</span> PORTFOLIO 2026</div>
+        <p class="hero-greeting">Hello, I’m</p>
+        <h1 id="hero-title">Cyrene<br><span>Otadoy.</span></h1>
+        <p class="hero-sub">Passionate about organizing, managing, and securing data <br class="desktop-break"> through reliable database solutions.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my projects <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="button button-glass" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="A decorative code illustration">
+        <div class="orbital-ring ring-one" aria-hidden="true"></div><div class="orbital-ring ring-two" aria-hidden="true"></div>
+        <div class="intro-card glass"><div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span>database.sql</span><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></div>
+          <div class="code-content"><pre><code><span class="code-comment">-- A little about me</span>
+
+<span class="code-rose">SELECT</span> name, career_goal, passion
+<span class="code-rose">FROM</span> aspiring_dba
+<span class="code-rose">WHERE</span> name = <span class="code-pink">'Cyrene Otadoy'</span>;
+
+<span class="code-comment">-- My focus</span>
+<span class="code-comment">-- SQL • Data Integrity • Security</span></code></pre></div>
+          <div class="code-footer"><span class="status-dot"></span> Always learning. Always creating.<span>✧</span></div>
+        </div>
+        <div class="floating-tag tag-developer glass"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span>DATABASE ENTHUSIAST</span></div>
+        <span class="star star-hero" aria-hidden="true">✳</span>
+      </div>
+      <div class="hero-bottom"><a href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><span class="eyebrow">01 / ABOUT ME</span><h2 id="about-title"><span class="title-mask"><span class="title-line">A little about <em>me.</em></span></span></h2></div>
+      <div class="about-grid">
+        <div class="about-photo glass"><div class="portrait-frame"><img src="assest/cyrene.jpg" alt="Portrait of Cyrene Otadoy" loading="lazy" width="900" height="1100"></div><div class="photo-caption"><span>CYRENE</span> / 01</span><span aria-hidden="true">✳</span></div></div>
+        <div class="about-copy"><span class="small-label">THE PERSON BEHIND THE DATA</span><h3>Curious mind.<br>Data-driven future.</h3><p>Hi! I'm <strong>Cyrene Otadoy</strong>, an IT student and aspiring Database Administrator with a passion for organizing, managing, and securing data.</p><p>I enjoy working with SQL, exploring database systems, and learning how to build efficient and reliable data solutions. I'm continuously improving my skills and eager to grow in the field of database administration.</p><div class="about-tags"><span>Problem Solver</span><span>Detail-Oriented</span><span>Continuous Learner</span></div><a class="text-link" href="#contact">Let’s connect <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </section>
+    <section class="skills section" id="skills" aria-labelledby="skills-title"><div class="section-heading"><span class="eyebrow">02 / SKILLS</span><h2 id="skills-title"><span class="title-mask"><span class="title-line">My technical <em>toolkit.</em></span></span></h2><p> The skills and technologies I'm learning to work with data.</p></div><div class="skill-list">
+      <article class="skill-card glass"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></div><span class="skill-number">01</span><h3>SQL Development</h3><p>Queries & data manipulation</p><div class="skill-detail">Turning data into meaningful insights.</div></article>
+      <article class="skill-card glass"><div class="skill-icon rose"><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg></div><span class="skill-number">02</span><h3>Database Design</h3><p>Structure & relationships</p><div class="skill-detail">Building organized and reliable databases.</div></article>
+      <article class="skill-card glass"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-data"/></svg></div><span class="skill-number">03</span><h3>MySQL</h3><p>Database management</p><div class="skill-detail">Managing data with accuracy and efficiency.</div></article>
+      <article class="skill-card glass"><div class="skill-icon rose"><svg class="icon" aria-hidden="true"><use href="#i-shield-check"/></svg></div><span class="skill-number">04</span><h3>Data Integrity & Security</h3><p>Protection & consistency</p><div class="skill-detail">Keeping data accurate, secure, and reliable.</div></article>
+    </div></section>
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading heading-split"><div><span class="eyebrow">03 / PROJECTS</span><h2 id="projects-title"><span class="title-mask"><span class="title-line">Featured <em>projects.</em></span></span></h2></div><p>A collection of projects showcasing my skills<br>in database design, development, and management.</p></div>
+      <div class="project-stage"><div class="project-grid">
+        <article class="project-card glass"><div class="project-visual visual-one" role="img" aria-label="Illustrative preview of the Classence student activity monitoring interface"><span class="preview-label">APPLICATION PREVIEW</span><div class="mock-window"><div class="mock-nav"><b>c<span>•</span> classence</b><span>Overview &nbsp; Classes &nbsp; Profile</span></div><div class="mock-body"><span class="mock-eyebrow">YOUR CLASSROOM, CONNECTED</span><div class="mock-title">Student Activity<br>Monitoring<span>.</span></div><div class="mock-pills"><span>Attendance</span><span>Activity</span><span>Reports</span></div><div class="mock-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div><div class="project-meta"><div class="project-topline"><span>01 / WEB APPLICATION</span><span class="project-badge">Development</span></div><h3>Classence</h3><p>A student monitoring system that tracks attendance, class participation, and activity through real-time monitoring and structured database management.</p><ul class="project-feature-tags" aria-label="Key features"><li>Real-time Monitoring</li><li>Attendance Tracking</li><li>Class Management</li><li>MySQL</li></ul><div class="project-bottom"><span>Web application</span><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></div></div></article>
+        <article class="project-card glass"><div class="project-visual visual-two" role="img" aria-label="Illustrative preview of the Student CRUD System admin interface"><span class="preview-label">APPLICATION PREVIEW</span><div class="mock-window student-window"><div class="mock-nav"><b><span>▦</span> Student records</b><span>Admin panel</span></div><div class="mock-body"><span class="mock-eyebrow">A LITTLE MORE ORGANIZED</span><div class="mock-title">Student<br>Management<span>.</span></div><div class="table-mock"><span>NAME</span><span>COURSE</span><span>STATUS</span><span>Student 01</span><span>BSIT</span><span class="active-pill">Active</span><span>Student 02</span><span>BSIT</span><span class="active-pill">Active</span></div></div></div></div><div class="project-meta"><div class="project-topline"><span>02 / WEB APPLICATION</span><span class="project-badge">Development</span></div><h3>Student CRUD System</h3><p>A CRUD-based system designed to efficiently organize, manage, and maintain student information using a relational database.</p><ul class="project-feature-tags" aria-label="Key features"><li>CRUD Operations</li><li>Student Records</li><li>Search &amp; Filter</li><li>MySQL</li></ul><div class="project-bottom"><span>Web application</span><svg class="icon" aria-hidden="true"><use href="#i-data"/></svg></div></div></article>
+        <article class="project-card glass"><div class="project-visual visual-three" role="img" aria-label="Illustrative preview of the PhilHealth membership registration project"><span class="preview-label">APPLICATION PREVIEW</span><div class="mock-window"><div class="mock-nav"><b>PhilHealth Membership</b></div><div class="mock-body"><div class="mock-title">Membership<br>Registration<span>.</span></div><div class="mock-fields"><div class="mock-field"><span>PIN</span><span class="mock-input"></span></div><div class="mock-field"><span>Full Name</span><span class="mock-input"></span></div><div class="mock-field"><span>Membership Type</span><span class="mock-input mock-select"><span aria-hidden="true">&#8964;</span></span></div></div><div class="mock-pills mock-register"><span>Register</span></div></div></div></div><div class="project-meta"><div class="project-topline"><span>03 / WEB APPLICATION</span><span class="project-badge">Development</span></div><h3>PhilHealth Membership Registration System</h3><p>A web-based membership management system designed to organize member information, streamline registration, and maintain structured records.</p><ul class="project-feature-tags" aria-label="Key features"><li>Member Registration</li><li>Admin Dashboard</li><li>Record Management</li><li>Data Integrity</li></ul><div class="project-bottom"><span>Web application</span><svg class="icon" aria-hidden="true"><use href="#i-design"/></svg></div></div></article>
+        
+      </div>
+      </div>
+      <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title" aria-describedby="project-dialog-description">
+        <div class="project-dialog-panel glass">
+          <button class="project-close" type="button" aria-label="Close project details" autofocus><span aria-hidden="true">&times;</span> Close</button>
+          <div class="project-dialog-visual"></div>
+          <div class="project-dialog-copy">
+            <span class="eyebrow" id="project-dialog-number"></span>
+            <h3 id="project-dialog-title"></h3>
+            <p id="project-dialog-description"></p>
+            <ul class="project-feature-tags project-dialog-tags" aria-label="Project highlights"></ul>
+            <div class="project-technologies" hidden><h4>Technologies</h4><p></p></div>
+            <div class="project-links" hidden></div>
+          </div>
+        </div>
+      </dialog>
+
+    </section>
+    <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="contact-panel glass"><span class="eyebrow">04 / CONTACT</span><span class="star contact-star" aria-hidden="true">✳</span><p class="contact-kicker">OPEN TO OPPORTUNITIES</p><h2 id="contact-title"><span class="title-mask"><span class="title-line">Let’s work<br><em>together.</em></span></span></h2><p class="contact-intro">Good things start with a conversation.</p><a class="button button-primary" href="mailto:cyrenerosebotadoy@iskolarngbayan.pup.edu.ph"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Say hello <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="email-link" href="https://www.linkedin.com/in/cyrene-rose-otadoy-3556bb433/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn / Cyrene Rose Otadoy <span aria-hidden="true">&#8599;</span></a><div class="contact-bottom"><span>THANK YOU FOR VISITING!</span><a href="#home">Back to top ↑</a></div></div></section>
+  </main>
+  <footer><a class="brand" href="#home" aria-label="Cyrene Otadoy, home">co<span>✳</span></a><span>© 2026 CYRENE OTADOY. ALL RIGHTS RESERVED.</span><span>BUILT WITH PURPOSE ✳</span></footer>
+</body>
+</html>
